@@ -16,7 +16,7 @@ if __name__ == '__main__':
 
     nn = NeuralNetwork(topology, input_data, expected_output,  0.1)
     nn.train()
-    while nn.calculate_loss() > 0.005:
+    while nn.calculate_loss() > 0.01:
         nn = NeuralNetwork(topology, input_data, expected_output, 0.1)
         nn.train()
     nn.print_layers()
