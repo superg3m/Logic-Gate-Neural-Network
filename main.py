@@ -16,6 +16,12 @@ if __name__ == '__main__':
 
     nn = NeuralNetwork(topology, input_data, expected_output,  0.1)
     nn.train()
+    while nn.calculate_loss() > 0.005:
+        nn = NeuralNetwork(topology, input_data, expected_output, 0.1)
+        nn.train()
+    nn.print_layers()
+    print("Loss: ", nn.calculate_loss())
+
 '''
     learning_rate = 0.1
     epochs = 1000

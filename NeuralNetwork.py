@@ -31,8 +31,7 @@ class NeuralNetwork:
             self.forward_propagation()
             #self.backward_propagation()
             #self.update_all_weights_and_biases()
-            self.print_layers()
-            print("Loss: ", self.calculate_loss())
+
 
 
     def create_input_layers(self):
