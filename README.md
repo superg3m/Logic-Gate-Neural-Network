@@ -1,4 +1,4 @@
-## Neural-Network
+## From Scratch Neural-Network
  
 OR gate:
 ```
